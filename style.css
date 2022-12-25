@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,4 +6,22 @@
 }
 :root {
   font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-color: #b0ffc8;
+  font-family: "Sriracha", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame {
+  padding: 6rem;
+  background-color: #f84909;
+  border-radius: 3rem;
+}
+.screen {
+  width: 50rem;
+  height: 50rem;
+  background-color: white;
 }
