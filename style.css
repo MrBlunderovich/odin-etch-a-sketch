@@ -5,6 +5,7 @@
   padding: 0;
 }
 :root {
+  --screen-size: 1;
   font-size: 62.5%;
 }
 body {
@@ -36,4 +37,14 @@ body {
   font-size: 5rem;
   color: #ffeb3c;
   font-family: "Lobster", sans-serif;
+}
+.screen {
+  display: grid;
+  grid-template-columns: repeat(var(--screen-size), 1fr);
+  grid-template-rows: repeat(var(--screen-size), 1fr);
+}
+.pixel {
+  width: auto;
+  height: auto;
+  border: 1px solid #ccc;
 }
