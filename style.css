@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Sriracha&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 .frame {
-  padding: 6rem;
+  padding: 0 8rem;
   background-color: #f84909;
   border-radius: 3rem;
 }
@@ -24,4 +24,16 @@ body {
   width: 50rem;
   height: 50rem;
   background-color: white;
+}
+.header,
+.control-container {
+  height: 8rem;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #ffeb3c;
+  font-family: "Lobster", sans-serif;
 }
