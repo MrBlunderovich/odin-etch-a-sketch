@@ -46,5 +46,8 @@ body {
 .pixel {
   width: auto;
   height: auto;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
+}
+.darker {
+  background-color: #999;
 }
