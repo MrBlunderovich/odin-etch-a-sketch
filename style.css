@@ -53,16 +53,15 @@ body {
   height: auto;
   border: 1px solid #eee;
 }
-.darker {
-  background-color: #999;
-}
+
 .btn {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Lobster", sans-serif;
-  height: 5rem;
-  padding: 0 2rem;
-  border-radius: 2.5rem;
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
   border: none;
   background-color: #ffeb3c;
   color: #f84909;
+  cursor: pointer;
 }
