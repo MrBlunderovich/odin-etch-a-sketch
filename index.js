@@ -22,12 +22,16 @@ function createPixels(screenSize) {
 createPixels(screenSize);
 
 function draw(event) {
-  event.target.classList.add("darker");
+  //event.target.classList.add("darker");
+  event.target.style.backgroundColor = randomColor();
 }
 
 function clear() {
   const pixels = document.querySelectorAll(".pixel");
-  pixels.forEach((pixel) => pixel.classList.remove("darker"));
+  pixels.forEach((pixel) => {
+    pixel.classList.remove("darker");
+    pixel.style = "";
+  });
 }
 
 function size() {
@@ -36,4 +40,16 @@ function size() {
     newSize = +prompt("Choose a grid size 10 to 100 pixels");
   } while (newSize < 10 || newSize > 100);
   createPixels(newSize);
+}
+
+function randomHex() {
+  let hexaDecimal = Math.floor(Math.random() * 255).toString(16);
+  if (hexaDecimal.length === 1) {
+    hexaDecimal = "0" + hexaDecimal;
+  }
+  return hexaDecimal;
+}
+
+function randomColor() {
+  return `#${randomHex()}${randomHex()}${randomHex()}`;
 }
