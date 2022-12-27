@@ -30,6 +30,11 @@ body {
 .control-container {
   height: 8rem;
 }
+.control-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -53,6 +58,11 @@ body {
 }
 .btn {
   font-size: 3rem;
-  font-family: "Sriracha", sans-serif;
-  padding: 1rem;
+  font-family: "Lobster", sans-serif;
+  height: 5rem;
+  padding: 0 2rem;
+  border-radius: 2.5rem;
+  border: none;
+  background-color: #ffeb3c;
+  color: #f84909;
 }
